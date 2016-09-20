@@ -47,7 +47,7 @@ class NetworkComponent(object):
         """
         
         response = self.session.expect(['[Uu]sername', '[Ll]ogin:', '[Pp]assword:', 'to continue connecting (yes/no)?'])
-        
+        print response
         if response == 0 or response == 1:
             self.session.sendline(self.user)
             self.session.expect('[Pp]assword:')
