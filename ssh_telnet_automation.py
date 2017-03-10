@@ -3,7 +3,7 @@
 This is a python script that will telnet or ssh to a list of devices and run
 a list of commands on each.
 
-Usage: ./boa_ld_script.py -t telnet -o NXOS -u jasons2 -d device-list.txt -c command-list.txt
+Usage: ./ssh_telnet_automation.py -t telnet -o NXOS -u jasons2 -d device-list.txt -c command-list.txt
 
 USING THE SCRIPT:
 From the CLI the username, device list, command list, transport, and OS is provided.  
@@ -59,7 +59,7 @@ def usage():
     print "-r <Repository> : Repository Directory"
     print "-s <sub directory> : Sub Directory"
     print
-    print "Usage: boa_ld_script.py -t telnet -u jasons2 -d device-list.txt -c command-list.txt\n"
+    print "Usage: ssh_telnet_automation.py -t telnet -u jasons2 -d device-list.txt -c command-list.txt\n"
     return
 
 def validate_input():
